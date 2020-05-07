@@ -1,5 +1,10 @@
 language: node_js
 node_js:
 - stable
-- '6'
-- '4'
+branches:
+  except:
+  - feature
+  - bugfix
+  only:
+  - master
+  - stable
