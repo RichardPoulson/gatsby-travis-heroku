@@ -1,99 +1,106 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  sss
+  gatsby-travis-heroku
 </h1>
+<h4>
+  Sample user interface developed with the <a href="https://reactjs.org/" title="React – A JavaScript library for building user interfaces" target="_blank" rel="noopener noreferrer">React</a> component framework and <a href="https://www.gatsbyjs.org/" title="''Fast in every way that matters: Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps''">Gatsby</a> framework.
+</h4>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+<hr>
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## 📜 Package Scripts:
 
-## 🚀 Quick start
+1. ```yarn start``` | ```gatsby develop```: Start the Gatsby development server ([http://localhost:8000/](http://localhost:8000/)).
 
-1.  **Create a Gatsby site.**
+1. ```yarn test``` | ```jest```: Run unit testing with [Jest testing framework](https://jestjs.io/ "''Jest is a delightful JavaScript Testing Framework with a focus on simplicity.  It works with projects using: Babel, TypeScript, Node, React, Angular, Vue and more!''").
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+1. ```yarn format```: Run [Prettier](https://prettier.io/ "''An opinionated code formatter'', ''Supports many languages'', ''Integrates with most editors''") and rewrite "... all processed files in place. This is comparable to the eslint --fix workflow."
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+1. ```yarn serve``` | ```gatsby serve```: Serve the production build of your site for testing ([http://localhost:9000/](http://localhost:9000/)).
 
-1.  **Start developing.**
+1. ```yarn clean``` | ```gatsby clean```: Wipe out the cache (.cache folder) and public directories.  This is useful as a last resort when your local project seems to have issues or content does not seem to be refreshing.
 
-    Navigate into your new site’s directory and start it up.
+<br>
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
-
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+## 💾 Project Directory:
 
     .
-    ├── node_modules
-    ├── src
+    ├── __mocks__/
+    ├── src/
+    │   ├── components/
+    │   │   └── __tests__/
+    │   ├── images/
+    │   ├── json/
+    │   ├── pages/
+    │   ├── styles/
+    │   ├── templates/
+    │   └── themes/
     ├── .gitignore
+    ├── .prettierignore
     ├── .prettierrc
+    ├── .travis.yml
     ├── gatsby-browser.js
     ├── gatsby-config.js
     ├── gatsby-node.js
     ├── gatsby-ssr.js
+    ├── jest-preprocess.js
+    ├── jest.config.js
+    ├── loadershim.js
     ├── LICENSE
-    ├── package-lock.json
+    ├── loadershim.js
     ├── package.json
-    └── README.md
+    ├── .prettierrc
+    ├── README.md
+    ├── setup-test-env.js
+    ├── static.json
+    └── yarn.lock
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+1. **`__mocks__/`**: [Manual Mocks](https://jestjs.io/docs/en/manual-mocks.html "\"Manual mocks are used to stub out functionality with mock data. For example, instead of accessing a remote resource like a website or a database, you might want to create a manual mock that allows you to use fake data. This ensures your tests will be fast and not flaky.\"") (mock data) for testing with the Jest framework.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+1. **`src/`**: The source code for the project.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+1. **`.gitignore`**: ([documentation](https://git-scm.com/docs/gitignore "\"A gitignore file specifies intentionally untracked files that Git should ignore. Files already tracked by Git are not affected; see the NOTES below for details.\"")) "Specifies intentionally untracked files to ignore."
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+1. **`.prettierignore`**: Files and directories that [Prettier should ignore](https://prettier.io/docs/en/ignore.html "\"Prettier offers an escape hatch to ignore a block of code or prevent entire files from being formatted.  To exclude files from formatting, add entries to a .prettierignore file in the project root or set the --ignore-path CLI option.  .prettierignore uses gitignore syntax.\"").
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+1. **`.prettierrc`**: The [Prettier configuration file](https://prettier.io/docs/en/configuration.html)
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+1. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+1. **`gatsby-config.js`**: main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+1. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+1. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+1. **`jest-preprocess.js`**: Transform all JS and JSX files using the [default Gatsby/Babel presets](https://github.com/gatsbyjs/gatsby/tree/master/packages/babel-preset-gatsby "\"Gatsby uses the phenomenal project Babel to enable support for writing modern JavaScript — while still supporting older browsers. This package contains the default Babel setup for all Gatsby projects.\"").
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+1. **`jest.config.js`**: The [Jest configuration file](https://jestjs.io/docs/en/configuration.html).
 
-## 🎓 Learning Gatsby
+1. **`LICENSE`**: ([documentation](https://choosealicense.com/licenses/)) This software project is licensed under the GNU Affero General Public License v3.0.  Gatsby is licensed under the MIT license.
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+1. **`loadershim.js`**: ([documentation](https://www.gatsbyjs.org/docs/unit-testing/#2-creating-a-configuration-file-for-jest)) Load the [Jest mock function](https://jestjs.io/docs/en/mock-functions.html "\"Mock functions allow you to test the links between code by erasing the actual implementation of a function, capturing calls to the function (and the parameters passed in those calls), capturing instances of constructor functions when instantiated with new, and allowing test-time configuration of return values.\"") using the global object.
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+1. **`package.json`**: ([documentation](https://nodejs.dev/the-package-json-guide)) A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm and Yarn knows which packages to install for your project.
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+1. **`README.md`**: A text file containing useful reference information about your project.
 
-## 💫 Deploy
+1. **`yarn.lock`**: ([documentation](https://classic.yarnpkg.com/en/docs/yarn-lock/)) Automatically generated file, based on "package.json" file.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+<br>
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
+## 🔌 Gatsby Plugins:
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+- **`catch-links`**: ([source code](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-catch-links)) "... intercepts all local links that have not been created in React using gatsby-link, and replaces their behavior with that of the gatsby-link navigate."
+
+- **`manifest`**: ([documentation](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest/ "\"... provides configuration and icons to the phone.  This plugin provides several features beyond manifest configuration to make your life easier, they are: auto icon generation, favicon support, ...\"")) "...allows users to add your site to their home screen on most mobile browsers."
+
+- **`react-helmet`**: ([documentation](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/ "\"... component which lets you control your document head using their React component.  With this plugin, attributes you add in their component, e.g. title, meta attributes, etc. will get added to the static HTML pages Gatsby builds.\"")) "This reusable React component will manage all of your changes to the document head.  Helmet takes plain HTML tags and outputs plain HTML tags. It's dead simple, and React beginner friendly."
+
+- **`sharp`**: ([documentation](https://www.gatsbyjs.org/packages/gatsby-plugin-sharp/ "\"... a low-level helper plugin generally used by other Gatsby plugins. You generally shouldn’t be using this directly but might find it helpful if doing very custom image processing.\"")) "Exposes several image processing functions built on the Sharp image processing library."
+
+<br>
+
+## 📚 References:
+
+1. [Gatsby CLI Commands](https://www.gatsbyjs.org/docs/gatsby-cli/) ([new](https://www.gatsbyjs.org/docs/gatsby-cli/#new "Create a Gatsby site: gatsby new [<site-name> [<starter-url>]]")|[develop](https://www.gatsbyjs.org/docs/gatsby-cli/#develop "Start the development server: gatsby develop [-H <host>] [-p <port>] [-o] [-S]")|[build](https://www.gatsbyjs.org/docs/gatsby-cli/#build "Compile your application and make it ready for deployment: gatsby build [--prefix-paths] [--no-uglify] [--profile] [--open-tracing-config-file] [--no-color]")|[serve](https://www.gatsbyjs.org/docs/gatsby-cli/#serve "Serve the production build of your site for testing: gatsby serve [-H <host>] [-p <port>] [-o]")|[info](https://www.gatsbyjs.org/docs/gatsby-cli/#info "At the root of a Gatsby site, get helpful environment information which will be required when reporting a bug: gatsby info [-C]"))
