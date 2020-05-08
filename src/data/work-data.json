@@ -1,0 +1,73 @@
+[
+  {
+    "title": "Universal Controls LLC",
+    "subheader": "Programmer",
+    "summary": "6/2019 – 3/2020",
+    "list": [
+      "Software Development: React web application (dashboard UI, SQL), .NET solutions (Gmail API, Entity Framework, SQL), IoT, logic controllers, human-machine interfaces.",
+      "Systems Administration: edge computers (configuration/deployment, database, VPN), network administrator (office, VPN), server administrator (Windows, Ubuntu, CentOS), virtual private servers (Certificate Authority, VPN server, SQL, Apache), office computers and printers/plotters.",
+      "Database Administration: MySQL, MariaDB, SSL/TLS, multi-source replication, stored procedures."
+    ],
+    "image": "universal-controls.jpg"
+  },
+  {
+    "title": "Design Center Colorado",
+    "subheader": "Junior Systems Engineer Contract",
+    "summary": "8/2018 – 5/2019",
+    "list": [
+      "On interdisciplinary team of nine engineers, client was Siemens Gamesa Renewable Energy who invested over $15,000 towards the development of a passive thermography system.",
+      "Developed software services and programs for single-board computer (remote control, data buffering and logging, file transfer, system status lights, sensor calibration (IMU)), interfaced single-board computer with three sensor modules (GPS, IMU, LIDAR) and IR camera, installed/configured OS, troubleshoot PPK filtering with GPS raw data."
+    ],
+    "image": "design-center-co.jpg"
+  },
+  {
+    "title": "West Safety Services",
+    "subheader": "PC Technician",
+    "summary": "11/2012 – 2/2014",
+    "list": [
+      "Responsible for installing, configuring, maintaining, troubleshooting, and repairing computer workstations and peripherals.",
+      "Administered print servers, user account information and permissions, and security group memberships.",
+      "Helped resolve networking issues such as physical connectivity, OS configuration and VPN security requirements.",
+      "Migrated users from Windows XP to Windows 7."
+    ],
+    "image": "west-safety-services.jpg"
+  },
+  {
+    "title": "University of Colorado Boulder",
+    "subheader": "IT Technician II",
+    "summary": "8/2011 – 6/2012",
+    "list": [
+      "Provided Tier 2 desktop support for multiple departments at the University, acting as primary technician for the “Office of Information Technology” and “Accounting and Business Support” departments.",
+      "Responsible for installing, configuring, maintaining, troubleshooting, and repairing computer workstations and peripherals.  Worked with 3rd party vendors to create quotes for new hardware and software.",
+      "Trained staff at University workshops, created technical documentation.",
+      "Administered print servers and user accounts (information, permissions, and security group memberships).",
+      "Helped resolve networking issues such as physical connectivity, OS configuration and VPN security requirements.",
+      "Migrated users from Windows XP to Windows 7"
+    ],
+    "image": "cu-boulder.jpeg"
+  },
+  {
+    "title": "Arizona State University",
+    "subheader": "Support Systems Specialist",
+    "summary": "8/2006 – 1/2011",
+    "list": [
+      "Provided Tier 2 IT support for the Global Institute of Sustainability (GIOS).  Responsible for designing/deploying computer images, managing user accounts and network file share permissions, and administrating Active Directory and Group policy.",
+      "Resolved hardware, software, network, printer and smart-phone issues via phone, e-mail and in person.",
+      "Successfully upgraded GIOS computers (100+ machines) from Windows XP/Office 2003 to Windows 7/Office 2010.",
+      "Recommended and created quotes for new equipment based on user’s needs and requests.",
+      "Worked with 3rd party vendors for warranty replacements."
+    ],
+    "image": "arizona_state_university.jpg"
+  },
+  {
+    "title": "Blue Ridge High School",
+    "subheader": "Computer Administrator",
+    "summary": "10/2003 – 3/2006",
+    "list": [
+      "Provided IT support for faculty and staff at the Junior High School, which included two computing labs, 14 lab teachers, 6 servers, 13 network printers, and 100+ computers.",
+      "Responsible for creating and deploying system images, managing user accounts and administrating Active Directory and Group Policy.",
+      "Resolved hardware, software, networking and printer issues via phone, email, remotely and in person."
+    ],
+    "image": "blue-ridge-school-district.jpg"
+  }
+]

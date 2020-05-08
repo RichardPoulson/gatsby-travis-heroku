@@ -1,21 +1,50 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Paperbase from '../components/Paperbase';
+import theme from '../themes/paperbaseTheme'; // MUI theme
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+/** @see {@link https://www.gatsbyjs.org/docs/static-query/ Querying Data in Components using StaticQuery | Gatsby} */
+export default function Index() {
+  const queryData = useStaticQuery(graphql`
+    query {
+      images: allFile(filter: {ext: {regex: "/(jpe?g|tiff?|svg|png|gif)/"}}) {
+        edges {
+          node {
+            relativePath
+            childImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
+        }
+      }
+      site {
+        siteMetadata {
+          title
+          author
+          description
+          siteUrl
+        }
+      }
+    }
+  `);
 
-export default IndexPage
+  /** 
+   * Maps image filenames to Gatsby image components. 
+   * @see {@link https://www.gatsbyjs.org/docs/gatsby-image/#gatsby-image-starts-with-a-query Gatsby Image API | GatsbyJS}
+   */
+  let imageMap = new Map();
+  queryData.images.edges.map(
+    ({ node }) => imageMap.set(node.relativePath, node.childImageSharp.fluid.src)
+  );
+
+  return (
+      <Paperbase
+        theme={theme}
+        imageMap={imageMap}
+        queryData={queryData}
+      />
+  );
+}

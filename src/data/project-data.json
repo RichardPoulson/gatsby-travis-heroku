@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Reduce VPN Infrastructure and Edge Computer Costs",
+    "subheader": null,
+    "summary": "Universal Controls LLC",
+    "details": [
+      "While working at Universal Controls, our team was tasked with reducing costs for our new product/service. The industrial PC and VPN licensing fees were the primary costs, so we researched alternative solutions that could replace them.",
+      "We found a free VPN solution, however many of the features we currently required (static IP assignment, IP routing, Firewall) were missing in this solution and would need to be developed by myself.  By using my networking education and experience, I was able to develop/implement those features, reducing our VPN costs to zero.",
+      "Regarding the industrial computer, I used my IoT education and experience to recompile the programs we developed and maintained to work with alternative CPUs (e.g. Raspberry Pi uses an ARM-type CPU).  This flexibility allowed us to chose an alternative computer model that was nearly half the other model’s price."
+    ],
+    "image": "universal-controls.jpg",
+    "src": "universal-controls.jpg",
+    "links": null
+  },
+  {
+    "title": "Senior Design Project",
+    "subheader": null,
+    "summary": "Design Center Colorado",
+    "details": [
+      "A two-course senior design capstone project where teams of senior engineering students (CS + ME + EE) work with directors and managers from industry to design a system.  My team (nine total) was assigned the client Siemens Gamesa Renewable Energy (SGRE), who invested over $15,000 towards the development of a system.  This system would use non-destructive testing to locate damage or defects at the surface or subsurface of a wind turbine blade, and would be mounted to an industry-grade drone so that technicians could safely test the blades from the ground.",
+      "My tasks as the Systems Engineer: help analyze system requirements and work with customer/team to resolve issues, research current/available technological solutions, create proof-of-concept prototype, give preliminary design review, get customer approval for the comprehensive design of the system, develop software and configure the OS (Debian) to interface system and sensor modules (IMU, LIDAR, GPS, IR camera), filter raw GPS data using PPK to increase accuracy, deliver final report to customer, and present our system at the Senior Design Expo.",
+      "Thanks to our hard work and education, we were able to deliver a system that satisfied all of the client’s requirements, and we gained experience as engineers working in industry."
+    ],
+    "image": "design-center-co.jpg",
+    "src": "design-center-co.jpg",
+    "links": [
+      {
+        "text": "Article describing project",
+        "linkURL": "https://www.colorado.edu/mechanical/2019/04/22/siemens-gamesa-partners-cu-students-develop-drone-based-monitoring-system-wind-turbines"
+      },
+      {
+        "text": "Design Center Colorado",
+        "linkURL": "https://www.colorado.edu/designcenter"
+      },
+      {
+        "text": "Siemens Gamesa homepage",
+        "linkURL": "https://www.siemensgamesa.com"
+      }
+    ]
+  },
+  {
+    "title": "Object-Oriented Software Project",
+    "subheader": null,
+    "summary": "University of Colorado Boulder",
+    "details": [
+      "In my Object-Oriented Analysis/Design class, my team (four total) was given a semester-long assignment to create an object-oriented software product.  We were required to use: an object-oriented framework (Django), classes, design patterns, and a code repository (GitHub).  Additionally, we needed to deliver UI mockups and multiple diagrams (classes, use cases, activity, sequence) written with the Unified Modeling Language (UML 2.0).",
+      "For our product, we chose to create a checkers game that allowed players to play against either another human player (over the network) or an AI.  I volunteered to program the logic for the AI opponent, since I was eager to use what I’d learned in my Intro to AI class.  There were three primary parts to to the AI’s logic: calculate the value of a given game state for the AI, determine the human player’s most likely next move, and to look a given number of moves ahead.",
+      "By collaborating with each other and having a clear assignment of duties, our group was able to deliver the software product and all the required deliverables on time."
+    ],
+    "links": null,
+    "image": "cu-boulder.jpeg",
+    "src": "cu-boulder.jpeg"
+  },
+  {
+    "title": "Software Development Project",
+    "subheader": null,
+    "summary": "University of Colorado Boulder",
+    "details": [
+      "With a group of students in my Software Development class, developed and deployed a web application.",
+      "Utilized various resources/services such as: GitHub, Heroku, NodeJS, mongoDB, Doxygen, and Bootstrap.",
+      "Deliverables included a web application that: created a new database document for each user, supported user login sessions, encrypted the user’s password using the Blowfish algorithm, and provided tools allowing users to manage their database document inside the web browser."
+    ],
+    "links": null,
+    "image": "cu-boulder.jpeg",
+    "src": "cu-boulder.jpeg"
+  }
+]
