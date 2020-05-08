@@ -8,3 +8,11 @@ branches:
   only:
   - master
   - stable
+deploy:
+  provider: heroku
+  api_key:
+    secure: Yg5zMxrW7ams2K/t/QfpFSmT47+zuPGToXqRMptpwc9lmuKhxMMsYy9IjJL8E8z+SIYsPIeV24T+bbUnvkGNU7EMglu3rAy48w7kkuKtO6wi7kbnB8YN+R39xw4ZFKl93D5+ZAR6jgdEe6/aEFO625hWWJ9DKB7GjlZUIJcH2md7rkvDpLMkc33vip4g1ZoQJydxZBRyf+TNUMvC6FQBGfeGCb6bpuQ2od1VJzsfofMh3DIdqUmvvFw8i7RpntY4yCmsjJMNgpxsIlmsMaE1Jqt2rIHVjDZPs7gAuF9bl/CTrMA6Si8ybFJMh8SBklueWTooBfk1O3zKiWwT7BpVNXTLwM+n7An8vZr06kMHkaUYpsIYhyGeAappQnjQwXOTVTpi0GDQs63NW45mScFFbHUHoGH8n+h+cMRc2Fu4d/1f0ltqwtodkF1X3arW4cpaunszJAC3UNgyKEQs7RMyGUbltwN6zpiGCx4mbqEhHMsvwMqysA1H2Mpk75YIj/M3rDVzIqRgeMYX6VZuRk/oCppEdHUW5vRlBflkyJJeM5riC/woGoy/5U4J23ka6GXIkZKhj7zXKx3eQK7SpwdT/OCscabM35e4agYZ/zE0lGmcQgnu9ormGmxA9sjlMN0vwvJ/5CQ93lfm5tw+Y77zRSS7L7VIGXvo+GVt5qs8868=
+  app: limitless-wave-54219
+  on:
+    repo: RichardPoulson/gatsby-travis-heroku
+  skip_cleanup: 'true'
