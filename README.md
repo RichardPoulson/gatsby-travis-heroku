@@ -1,5 +1,5 @@
-<h1 align="center">
-  gatsby-travis-heroku
+<h1>
+  gatsby-travis-heroku <a href="https://travis-ci.com/github/RichardPoulson/gatsby-travis-heroku" title="RichardPoulson/gatsby-travis-heroku - Travis CI" target="_blank" rel="noopener noreferrer"><img src="https://travis-ci.com/RichardPoulson/gatsby-travis-heroku.svg?branch=master"></img></a>
 </h1>
 <h4>
   Sample user interface developed with the <a href="https://reactjs.org/" title="React – A JavaScript library for building user interfaces" target="_blank" rel="noopener noreferrer">React</a> component framework and <a href="https://www.gatsbyjs.org/" title="''Fast in every way that matters: Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps''">Gatsby</a> framework.
